@@ -4,7 +4,7 @@ This repository contains an analysis of patent data from WIPO PATENTSCOPE, focus
 
 ## Overview
 
-This project analyzes historical patent data to identify gender patterns among inventors. The analysis includes data from patents spanning multiple decades, utilizing web-scraped data from the World Intellectual Property Organization (WIPO) PATENTSCOPE database.
+This project analyzes historical patent data to identify gender patterns among inventors. The analysis includes data from patents spanning multiple decades, utilizing web-scraped data from the World Intellectual Property Organization (WIPO) PATENTSCOPE database. This work is the continuation of the very complete work done by Evelyn McLean, Jane Abdo, Nadia Blostein and Nikola Stikov. Their analysis are described in “Little Science, Big Science, and Beyond,How Amateurs Shape the Scientific Landscape” https://doi.org/10.55458/neurolibre.00031
 
 ## Files
 
@@ -16,24 +16,12 @@ This project analyzes historical patent data to identify gender patterns among i
 ## Data Source
 
 The patent data was obtained through web scraping from [WIPO PATENTSCOPE](https://patentscope.wipo.int/search/en/search.jsf).
+The gender of the names selected were extracted from: 
+USA social security database: https://www.ssa.gov/oact/babynames/decades/century.html
+Netherland database: https://www.naamkunde.net/wp-content/uploads/2012/04/top_100_meisjes_jongens_1880-2011.zip
+Wikipedia: https://en.wikipedia.org/wiki/List_of_most_popular_given_names
+Forebears: https://forebears.io/forenames/most-popular
 
-### Data Collection Method:
-1. In the main page, set "Field" to **Publication Date**
-2. Enter the year of interest in "Search terms..."
-3. Set "Sort" to **Relevance** and "Per page" to **200**
+## Context
 
-## Requirements
-
-The analysis uses the following Python libraries:
-- pandas
-- plotly
-- country_converter
-- Additional dependencies as specified in the notebook
-
-## Usage
-
-Open `Analysis_notebook.ipynb` in Jupyter Notebook or JupyterLab to explore the analysis.
-
-## License
-
-This project is for educational and research purposes.
+This project is for educational and research purposes of the course GBM6330E of Polytechnique Montréal.
